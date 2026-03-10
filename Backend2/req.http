@@ -1,0 +1,71 @@
+### READ all user
+GET http://localhost:4000/user-api/users
+// dont support thee body
+
+### READ a user by id
+
+GET http://localhost:4000/user-api/users/69aaa103a47b0e01f8bd9adb
+
+### CREATE new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+  "username":"hask",
+  "password":"hi1234",
+  "email":"has@gmail.com",
+  "age":20
+}
+
+ 
+### UPDATE a user
+PUT http://localhost:4000/user-api/users/69aaa103a47b0e01f8bd9adb
+Content-Type: application/json
+
+{
+    "username":"haslI",
+    "password":"hasrrjjty",
+    "email":"hasrith@gmail.com",
+    "age":20
+}
+
+
+### DELETE a user
+DELETE http://localhost:4000/user-api/users/69aa6ef09a1ab4d34b321c57
+// it dont support the body
+
+
+
+// product// 
+
+###
+GET http://localhost:4444/product-api/product
+###
+GET http://localhost:4444/product-api/product/69ab07169ce3fe1d3b5911dc
+###
+POST http://localhost:4444/product-api/product
+Content-Type: application/json
+
+{
+      "productID":1225,
+     "productName":"bread",
+      "price": 35,
+      "brand": "modern"
+}
+
+
+###
+PUT   http://localhost:4444/product-api/product/69ab07169ce3fe1d3b5911dc
+Content-Type: application/json
+
+ {
+      "productID":1122,
+     "productName":"oats",
+      "price": 300,
+      "brand": "pintola"
+}
+
+
+
+###
+DELETE http://localhost:4444/product-api/product/69ab07169ce3fe1d3b5911dc
