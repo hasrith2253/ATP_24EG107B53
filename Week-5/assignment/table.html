@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/table.css">
+</head>
+<body>
+
+    <!-- Table 1: Employee Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Fullname</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>has</td>
+                <td>hr</td>
+                <td>150000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>zoro</td>
+                <td>tech lead</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>mat</td>
+                <td>SDE-1</td>
+                <td>110000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>max</td>
+                <td>SDE-2</td>
+                <td>140000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table 2: Rowspan Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Number</th>
+                <th>Subjects</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="3">has</td>
+                <td>Maths</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td colspan="4">Toatl = 200 </td>
+            </tr>
+            <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">zoro</td>
+                <td>Maths</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td> Science</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>79</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
