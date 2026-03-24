@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(255, 255, 181);
+}
+
+div{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    
+}
+
+h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    
+}                                  
+
+img{
+       /*  to make the img move left,wright*/
+    display:block;
+    margin:auto
+}
+h3{
+    color: red;
+    font-size: 20px;
+    margin: auto;
+}
+
+hr{
+    border-color: black;
+   
+}

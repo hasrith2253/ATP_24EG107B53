@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(255, 173, 66);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;        /* added so li items have spacing */
+    padding: 20px;
+    list-style: none; /* removed bullet points */
+}
+
+.card {
+    display: flex;
+   
+    margin: 25px 100px;
+    
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h2 {
+    margin-left: 100px;
+}
+main{
+    background-color:rgb(97, 97, 255);
+
+}
+
+.foot{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 25px 100px;
+}
+
+div h2{
+    padding: 10px;
+}
+
+@media screen and ( max-width:600px){
+
+}
+     
