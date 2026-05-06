@@ -1,13 +1,13 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { useNavigate, useLocation } from "react-router";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function EditEmployee() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
-  const { empObj } = location.state;
+  const { empObj } = location.state || {};
 
   const {
     register,

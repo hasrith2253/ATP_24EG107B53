@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 function Employee() {
   const navigate = useNavigate();

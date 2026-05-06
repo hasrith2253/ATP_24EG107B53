@@ -2,14 +2,14 @@ import exp from "express";
 import { connect } from "mongoose";
 import { empRoute } from "./API/empApp.js";
 import cors from "cors";
+import dotenv from "dotenv";
+
+// Load environment variables
+dotenv.config();
 
 const app = exp();
 //add cors middleware
-app.use(
-  cors({
-    origin: ["http://localhost:5173"],
-  }),
-);
+app.use(cors());
 //body parser middleware
 app.use(exp.json());
 //emp api middleware
@@ -18,7 +18,7 @@ app.use("/emp-api", empRoute);
 //DB connection
 const connectDB = async () => {
   try {
-    await connect("mongodb://localhost:27017/empdb");
+    await connect(process.env.MONGO_URI);
     console.log("DB connected");
     app.listen(4000, () => console.log("server listening on port 4000.."));
   } catch (err) {

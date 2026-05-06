@@ -1,19 +1,8 @@
-import React, { useContext } from 'react';
-import { EmpContext } from '../context/contextProvider';
-import Test from "./Test";
-
 function Home() {
-    const { counter, changeCounter, decrementCounter } = useContext(EmpContext);
-
     return (
-        <div>
-            <h1>Home</h1>
-            <div className="border-2 border-gray-400 p-4 rounded-lg inline-block">
-                <p className="text-center mb-2">Counter: {counter}</p>
-                <div className="flex justify-center space-x-2">
-                    <button onClick={decrementCounter} className="bg-red-500 text-white px-4 py-2 rounded">-</button>
-                    <button onClick={changeCounter} className="bg-green-500 text-white px-4 py-2 rounded">+</button>
-                </div>
+        <div className="flex min-h-[70vh] items-center justify-center">
+            <div className="w-full max-w-2xl rounded-3xl border border-gray-200 bg-white p-16 text-center shadow-xl">
+                <h1 className="text-5xl font-bold text-slate-900">Employee App</h1>
             </div>
         </div>
     );
