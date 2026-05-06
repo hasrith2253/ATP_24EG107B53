@@ -17,7 +17,7 @@ const gotoEditEmployee = (empObj)=>{
 
 const deleteEmployee = async (empId) => {
   if (!window.confirm("Delete this employee?")) return;
-  const res = await fetch(`http://localhost:4000/emp-api/employees/${empId}`, {
+  const res = await fetch(`https://emp-back-nuxh.onrender.com/emp-api/employees/${empId}`, {
     method: "DELETE",
   });
   if (res.ok) {
@@ -30,7 +30,7 @@ const deleteEmployee = async (empId) => {
 
   useEffect(() => {
     async function getEmps() {
-      let res = await fetch("http://localhost:4000/emp-api/employees");
+      let res = await fetch("https://emp-back-nuxh.onrender.com/emp-api/employees");
       if (res.status === 200) {
         let resObj = await res.json();
         setEmps(resObj.payload);

@@ -28,7 +28,7 @@ function EditEmployee() {
     try {
       setLoading(true);
       //make HTTP PUT req
-      let res = await fetch(`http://localhost:4000/emp-api/employees/${empObj._id}`, {
+      let res = await fetch(`https://emp-back-nuxh.onrender.com/emp-api/employees/${empObj._id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedEmpObj),

@@ -1,5 +1,5 @@
 ### Create emp
-POST http://localhost:4000/emp-api/employees
+POST https://emp-back-nuxh.onrender.com/emp-api/employees
 Content-Type: application/json
 
 {
@@ -11,7 +11,7 @@ Content-Type: application/json
 }
 
 ### Read all emps
-GET http://localhost:4000/emp-api/employees
+GET https://emp-back-nuxh.onrender.com/emp-api/employees
 
 ### Update emp by id
 PUT http://localhost:4000/emp-api/employees/69ca2914876d014c00a49b6e
