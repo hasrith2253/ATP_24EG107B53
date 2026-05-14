@@ -1,0 +1,76 @@
+
+### READ all user
+GET http://localhost:5353/users-api/users
+// dont support thee body
+
+### READ a user by id
+
+GET http://localhost:5353/users-api/users/10
+
+### CREATE new user
+POST http://localhost:5353/users-api/users
+Content-Type: application/json
+
+{
+    "id":10,
+    "name":"shoes",
+    "age":19
+}
+
+ 
+### UPDATE a user
+PUT http://localhost:5353/users-api/users
+Content-Type: application/json
+
+{
+    "id":11,
+    "name":"shirt",
+    "age":20
+}
+
+
+### DELETE a user
+DELETE http://localhost:5353/users-api/users/10
+// it dont support the body
+
+
+
+#################>>>>>>>>product>>######################
+
+### READ all product
+GET http://localhost:5353/products-api/products
+// dont support thee body
+
+### READ a product by Brand
+GET http://localhost:5353/products-api/products/puma
+
+### CREATE new product
+POST http://localhost:5353/products-api/products
+Content-Type: application/json
+
+{
+    "id":1101,
+    "name":"shoes",
+    "Brand":"puma",
+    "price":45000
+}
+
+ 
+### UPDATE a product
+PUT http://localhost:5353/products-api/products
+Content-Type: application/json
+
+{
+    "id":1101,
+    "name":"shirt",
+    "Brand":"nike",
+    "price":60000
+}
+
+### DELETE a product
+DELETE http://localhost:5353/products-api/products/1101
+// it dont support the body
+
+
+// post request and put req should send 
+// get and delete requests donot support bod of the request object. so that these two request can send the data through end point

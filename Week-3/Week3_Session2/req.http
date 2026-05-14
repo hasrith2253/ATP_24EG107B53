@@ -1,0 +1,101 @@
+### READ all user(req to protected route)
+GET http://localhost:4000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9wQGdtYWlsLmNvbSIsImlhdCI6MTc3MzI5NzU5MiwiZXhwIjoxNzczMzAxMTkyfQ.vc9rrc621D42KrSey4PBCdQZ9tZqnd1eSPPiK7YfnEw; Path=/; HttpOnly; SameSite=Lax
+
+### READ a user by id
+GET http://localhost:4000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9wQGdtYWlsLmNvbSIsImlhdCI6MTc3MzI5NzU5MiwiZXhwIjoxNzczMzAxMTkyfQ.vc9rrc621D42KrSey4PBCdQZ9tZqnd1eSPPiK7YfnEw; Path=/; HttpOnly; SameSite=Lax
+
+### CREATE new user
+POST http://localhost:4000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcmlAZ21haWwuY29tIiwiaWF0IjoxNzcyODc3MTg2LCJleHAiOjE3NzI4ODA3ODZ9.1Ngwu6J4KjKXVPXeNtHE9c5B1tc16iqEW5w-NFdOau8; Path=/; HttpOnly; SameSite=Lax
+Content-Type: application/json
+
+{
+  
+  "password":"97",
+  "email":"op@gmail.com",
+  "username":"ubc"
+  
+
+}
+
+### user login 
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+  
+  "password":"97",
+  "email":"op@gmail.com"
+
+}
+
+
+
+ 
+### UPDATE a user
+PUT http://localhost:4000/user-api/users/69abf57c75a27a48c1c8c504
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcmlAZ21haWwuY29tIiwiaWF0IjoxNzcyODc3MTg2LCJleHAiOjE3NzI4ODA3ODZ9.1Ngwu6J4KjKXVPXeNtHE9c5B1tc16iqEW5w-NFdOau8; Path=/; HttpOnly; SameSite=Lax
+Content-Type: application/json
+
+{
+    
+    "password":"878789",
+    "email":"cuvve@gmail.com",
+    "username":"mkmkmm"
+    
+    
+}
+
+
+### DELETE a user
+DELETE http://localhost:4000/user-api/users/69b25582ed7e06ea8a4a1b1d
+// it dont support the body
+
+
+
+
+
+### add products to user cart
+PUT http://localhost:4000/user-api/users/cart/product-id/69b250978494bccfebff89e4
+
+
+//product// 
+
+### Read all products
+GET http://localhost:4000/product-api/product
+
+
+
+### Read all products by id
+GET http://localhost:4000/product-api/product
+
+
+### Create a new products
+POST http://localhost:4000/product-api/product
+Content-Type: application/json
+
+{
+      "productID":2556,
+     "productName":"whey",
+      "price": 900,
+      "brand": "optimum"
+}
+
+
+### update a new products
+PUT   http://localhost:4000/product-api/product/69b24eb992875408849a1d61
+Content-Type: application/json
+
+ {
+      "productID":1122,
+     "productName":"oats",
+      "price": 300,
+      "brand": "pintola"
+}
+
+
+
+### Delete a product
+DELETE http://localhost:4000/product-api/product/69b24eb992875408849a1d61
